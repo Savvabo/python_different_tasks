@@ -57,9 +57,9 @@ class Order:
         return f'Customer: {self._customer} ordered: {list(map(str, selected_products))} the whole value is: {self.order_sum}'
 
 
-customer = Customer('Leva', 'Rossum', '0991488099')
+first_customer = Customer('Leva', 'Rossum', '0991488099')
 
 selected_products = [Product(1, 'first_product', '20*20*20'), Product(2, 'second_product', '40*40*40')]
-selected_order = customer.create_order(selected_products)
+selected_order = first_customer.create_order(selected_products)
 
 print(selected_order)
